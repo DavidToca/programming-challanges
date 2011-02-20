@@ -1,0 +1,12 @@
+easy problem (somehow c simulation solution doesn't work, any ideas why?)
+tricky part, they don't say i<j, so swap if i>j
+using DP seams good strategy, but simulation is faster to code and get the job done
+this problem shows how  slowly is java, you have to be very carefull with reading from stdin
+and you HAVE TO use DP to solve problem, otherwise you will get TLE.
+
+BTW naming input variables as i and j, make thinks kind of confusing in loops,
+I promess not do that again.
+
+This problem is related to CollatzProblem
+
+http://mathworld.wolfram.com/CollatzProblem.html
