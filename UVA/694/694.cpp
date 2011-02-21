@@ -1,4 +1,4 @@
-/* UVA 694 - The 3n+1 problem
+/* UVA 694 - like UVA-100
    David Felipe Toca
    david.virusfel@gmail.com
    Accepted
