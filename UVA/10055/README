@@ -1,0 +1,3 @@
+This problem is easy, just be carefull with constrains
+2^32 don't fit in integer, so use long long (I think unsigned long works too
+)
