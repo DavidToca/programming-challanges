@@ -1,0 +1,4 @@
+this is just like 100
+you have to store the index of maximum value
+plus, you can use x&1 to check if it is odd or not
+and you may use usigned int, and long long as well
