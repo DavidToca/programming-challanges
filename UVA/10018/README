@@ -1,0 +1,18 @@
+Reverse and Add
+===
+
+Understanding the problem
+---
+just have to reverse the input number and add it, until you got an
+palindrome
+
+Gotchas
+---
+be carefull with datatype of the input and output number, it will fix
+in an unsinged int
+
+Explanation
+---
+simulate the process, to reverse you can treath it as an string (API handle reverse in java and c++), or 
+like a number, and use module or other method
+
