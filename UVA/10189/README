@@ -1,0 +1,18 @@
+## 10189 - Minesweeper
+===
+
+Understanding the problem
+---
+Given a matriz with mines (*), return another matriz with each cell value
+as the number of mines closer,except if the cell is in fact a mine, in that case
+leave it *
+
+Gotchas
+---
+Be carefull extra new line at last case
+
+Explanation
+---
+Add 3 to maximum matriz value, so I don't have to validate wherever each case is 
+an posible value, and iterate over the original matriz, calculed his value,and print it
+
