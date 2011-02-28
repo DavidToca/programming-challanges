@@ -5,6 +5,7 @@
    adhoc
 */
 #include <stdio.h>
+#include <string.h>
 
 #define MAX 102
 
@@ -47,16 +48,9 @@ for(cases=1;scanf("%d %d",&n,&m) && n!=0;cases++)
 
 char matriz[MAX][MAX];
 
-for(k=0;k<=n+1;k++)
-{
 
-for(l=0;l<=m+1;l++)
-{
-matriz[k][l]='.';
+memset(matriz,'.',sizeof(matriz));
 
-}
-
-}
 
 if(cases>1) putchar('\n');
 
