@@ -1,0 +1,3 @@
+The problem here is precision
+I solved by multiply by 100, make operations and then divide by 100 on print
+
