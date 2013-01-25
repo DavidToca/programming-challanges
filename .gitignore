@@ -1,0 +1,43 @@
+
+#**********mac template**********
+
+
+#**********osx template**********
+
+.DS_Store
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+ 
+
+#**********java template**********
+
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+ 
+
+#**********c template**********
+
+# Object files
+*.o
+
+# Libraries
+*.lib
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+
+# Executables
+*.exe
+*.out
+
+ 
