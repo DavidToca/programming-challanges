@@ -1,3 +1,4 @@
+https://codeo.app/problemas/0xf2-partir-un-arreglo-en-2
 0xf2 - Partir un arreglo en 2
 Tenemos un arreglo de enteros. Queremos partirlo en dos arreglos de tal manera que:
 
