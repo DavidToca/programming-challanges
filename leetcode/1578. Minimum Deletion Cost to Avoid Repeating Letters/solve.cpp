@@ -1,16 +1,22 @@
+#include <bits/stdc++.h>
 class Solution {
 public:
     int minCost(string s, vector<int>& cost) {
       int solution = 0;
       int n = cost.size();
       for(int i=0; i<n-1;i++){
-        int sum = cost[i];
-        int maximum = cost[i];
-        for(;i < n-1 && s.at(i) == s.at(i+1); i++){
-          sum+=cost[i+1];
-          maximum = max(maximum, cost[i+1]);    
+         
+        if(s.at(i) == s.at(i+1)){
+            int minimum;
+            if (cost[i] > cost[i+1]){
+                minimum = cost[i+1];
+                cost[i+1] = cost[i];
+            }
+            else{
+                minimum = cost[i];
+            }
+            solution += minimum;
         }
-        solution +=sum-maximum;
       }
 
       return solution;
