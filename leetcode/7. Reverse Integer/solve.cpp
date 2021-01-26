@@ -13,7 +13,7 @@ public:
             a = a.substr(1);
         }
         std::reverse(a.begin(), a.end());
-        
+
         sign.append(a);
         
         long answer = stol(sign);
