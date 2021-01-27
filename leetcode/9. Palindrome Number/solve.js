@@ -4,5 +4,5 @@
  */
 var isPalindrome = function(x) {
     let s = x.toString();
-    return s === x.toString().split('').reverse().join('');
+    return s === s.split('').reverse().join('');
 };
