@@ -12,7 +12,9 @@ func (c *Stack) Push(value rune) {
 }
 
 func (c *Stack) Pop() rune {
-	return c.stack.Front().Value.(rune)
+	front := c.stack.Front()
+	c.stack.Remove(front)
+	return front.Value.(rune)
 }
 
 func (c *Stack) Empty() bool {
@@ -35,23 +37,27 @@ func isValid(s string) bool {
 
 	for _, char := range runes {
 		val, ok := brackets[char]
-		if ok {
 
+		if ok {
+			fmt.Println("char in brakets")
 			if queue.Empty() {
+				fmt.Println("queue is empty")
 				return false
 			}
 
 			top := queue.Pop()
 
 			if top != val {
+				fmt.Println("top different than val ", top, "!=", val)
 				return false
 			}
 
 		} else {
+			fmt.Println("pushing ", char)
 			queue.Push(char)
 		}
 	}
-
+	fmt.Println("queue is empty? ", queue.Empty())
 	return queue.Empty()
 
 }
