@@ -14,7 +14,7 @@ impl Solution {
             a = a.to_owned();
             a = a + sign;
         }
-        return a;
+        a
     }
 }
 
