@@ -10,8 +10,9 @@ class Solution:
 
             queue.append(node)
 
-            if node not in sets:
-                sets[node] = 'A'
+            if node in sets:
+                continue
+            sets[node] = 'A'
 
             while(len(queue)):
                 current_node = queue.pop(0)
