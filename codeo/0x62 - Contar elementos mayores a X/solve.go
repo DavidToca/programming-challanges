@@ -16,7 +16,15 @@ func main() {
 
 	fmt.Scanf("%d", &cases)
 
-	for i := 0; i < n; i++ {
-		fmt.Scanf("%d", &array[i])
+	for i := 0; i < cases; i++ {
+		fmt.Scanf("%d", &comp)
+		response := 0
+
+		for j := 0; j < n; j++ {
+			if array[j] > comp {
+				response += 1
+			}
+		}
+		fmt.Println(response)
 	}
 }

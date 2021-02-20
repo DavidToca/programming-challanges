@@ -12,7 +12,7 @@ class Solution:
 
             if node in sets:
                 continue
-            sets[node] = 'A'
+            sets[node] = 1
 
             while(len(queue)):
                 current_node = queue.pop(0)
@@ -22,7 +22,7 @@ class Solution:
                 for edge in graph[current_node]:
 
                     if edge not in sets:
-                        sets[edge] = 'A' if node_set == 'B' else 'B'
+                        sets[edge] = node_set * -1
                         queue.append(edge)
 
                     if sets[edge] == node_set:
