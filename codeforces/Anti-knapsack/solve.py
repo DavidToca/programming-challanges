@@ -22,9 +22,8 @@ t = int(input())
 for i in range(t):
     n,k = list(map(int, input().split()))
 
-
     r = solve(n, k)
-
     print(len(r))
+
     if r:
         print(' '.join(map(str, r)))
