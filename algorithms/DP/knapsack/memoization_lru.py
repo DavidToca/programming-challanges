@@ -1,3 +1,7 @@
+import sys
+
+sys.setrecursionlimit(10 ** 6)
+
 from functools import lru_cache
 
 
