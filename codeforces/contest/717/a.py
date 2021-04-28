@@ -4,7 +4,7 @@ import math
 import datetime
 import collections
 
-sys.setrecursionlimit(100000000)
+sys.setrecursionlimit(100_000_000)
 
 from functools import lru_cache
 from itertools import combinations
@@ -13,13 +13,13 @@ import heapq
 
 mod = 1_000_000_007
 
-inp    =lambda: int(input())
-strng  =lambda: input().strip()
-jn     =lambda x,l: x.join(map(str,l))
-strl   =lambda: list(input().strip())
-mul    =lambda: map(int,input().strip().split())
-mulf   =lambda: map(float,input().strip().split())
-seq    =lambda: list(map(int,input().strip().split()))
+inp    = lambda: int(input())
+strng  = lambda: input().strip()
+jn     = lambda x,l: x.join(map(str,l))
+strl   = lambda: list(input().strip())
+mul    = lambda: map(int,input().strip().split())
+mulf   = lambda: map(float,input().strip().split())
+seq    = lambda: list(map(int,input().strip().split()))
 
 def solve(*args, **kwargs):
     return 0
