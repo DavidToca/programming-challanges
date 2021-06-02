@@ -4,13 +4,13 @@ VISITED = 2
 
 
 class Solution:
-    def calculate_max_area(self, row, col, grid):
+    def calculate_max_area(self, start_row, start_col, grid):
         cols = len(grid[0])
         rows = len(grid)
 
         stack = []
 
-        stack.append((row, col))
+        stack.append((start_row, start_col))
         area = 0
         while stack:
             row, col = stack.pop()
@@ -35,11 +35,11 @@ class Solution:
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
         max_area = 0
 
-        m = len(grid[0])
-        n = len(grid)
+        cols = len(grid[0])
+        rows = len(grid)
 
-        for row in range(n):
-            for col in range(m):
+        for row in range(rows):
+            for col in range(cols):
                 if grid[row][col] == NOT_VISITED:
                     area = self.calculate_max_area(row, col, grid)
                     max_area = max(max_area, area)
